@@ -12,10 +12,48 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            position: relative;
         }
+        
+        /* Navigation Bar Styles */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+        .nav-logo-small {
+            height: 30px; 
+            display: block;
+        }
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #cccccc;
+        }
+
+        /* Header Section Styles */
         .header-section {
             text-align: center;
-            padding: 60px 20px 40px 20px;
+            padding: 40px 20px 60px 20px;
+        }
+        .main-logo {
+            max-width: 220px;
+            margin-bottom: 25px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         .header-title {
             font-size: 32px;
@@ -28,6 +66,8 @@
             color: #7a7a7a;
             margin: 0;
         }
+
+        /* Container and Rules Panels */
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -73,11 +113,28 @@
 </head>
 <body>
 
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <!-- Small logo for the top-left navigation corner -->
+            <img src="https://i.imgur.com/BlLjPK1.png" alt="OSRP Logo" class="nav-logo-small" onerror="this.style.display='none'">
+        </div>
+        <div class="nav-links">
+            <a href="https://oldschoolroleplay.noclip.me/">Home</a>
+            <a href="https://oldschoolroleplay.noclip.me/members">Members</a>
+            <a href="https://oldschoolroleplay.noclip.me/store/oldschool-rp-m9k-evil-melon-growing">Store</a>
+        </div>
+    </nav>
+
+    <!-- Main Header -->
     <div class="header-section">
+        <!-- Large centered logo -->
+        <img src="https://i.imgur.com/BlLjPK1.png" alt="OldSchool Roleplay Logo" class="main-logo" onerror="this.style.display='none'">
         <h1 class="header-title">Welcome to OldSchool Roleplay</h1>
         <p class="header-subtitle">A real tight-knit community focused on bringing back the old school era of video gaming.</p>
     </div>
 
+    <!-- Content Container -->
     <div class="container">
         
         <!-- General Rules -->
